@@ -1,0 +1,25 @@
+{
+  "name": "takemethere",
+  "version": "1.0.0",
+  "description": "Take me there travel app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreyjhighland/TakeMeThere.git"
+  },
+  "keywords": [
+    "Airfare",
+    "Travel",
+    "Vacation"
+  ],
+  "author": "Corey Highland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreyjhighland/TakeMeThere/issues"
+  },
+  "homepage": "https://github.com/coreyjhighland/TakeMeThere#readme"
+}
