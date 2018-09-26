@@ -4,7 +4,7 @@
   "description": "Take me there travel app.",
   "main": "server.js",
   "scripts": {
-    "test": "npm test",
+    "test": "mocha",
     "start": "node server.js"
   },
   "repository": {
