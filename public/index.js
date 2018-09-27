@@ -1,4 +1,4 @@
-MOCK_DATA = {
+let TAKEMETHERE = {
   locations: [
     {
       name: 'Austria',
@@ -43,12 +43,23 @@ MOCK_DATA = {
   ]
 };
 
-function getLocation(fn) {}
+function getTopLocation(fn) {
+  setTimeout(function() {
+    fn(TAKEMETHERE);
+  }, 1);
+}
 
-function displayTopLocations() {}
+function displayTopLocations(data) {
+  $.each(data.locations, function(i) {
+    $('body').append(
+      `<p>${data.locations[i].name}</p>
+      <img src="${data.locations[i].picture}">)`
+    );
+  });
+}
 
 function getAndShowTopLocations() {
-  getLocation(displayTopLocations);
+  getTopLocation(displayTopLocations);
 }
 
 $(function() {
