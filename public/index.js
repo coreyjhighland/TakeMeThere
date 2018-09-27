@@ -53,7 +53,9 @@ function displayTopLocations(data) {
   $.each(data.locations, function(i) {
     $('body').append(
       `<p>${data.locations[i].name}</p>
-      <img src="${data.locations[i].picture}">)`
+      <img src="${data.locations[i].picture}" alt="picture of ${
+        data.locations[i].name
+      }" style="width:500px;">`
     );
   });
 }
