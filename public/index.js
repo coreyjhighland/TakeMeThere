@@ -64,6 +64,14 @@ function getAndShowTopLocations() {
   getTopLocation(displayTopLocations);
 }
 
+function getLocationsButton() {
+  $('.start').on('click', '#startButton', function(e) {
+    event.preventDefault();
+    getAndShowTopLocations();
+    $('#startButton').hide();
+  });
+}
+
 $(function() {
-  getAndShowTopLocations();
+  getLocationsButton();
 });
